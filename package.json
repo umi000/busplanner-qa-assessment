@@ -1,0 +1,22 @@
+{
+  "name": "busplanner-qa-assessment",
+  "version": "1.0.0",
+  "description": "Playwright automation for the BusPlanner QA technical assessment",
+  "scripts": {
+    "test": "playwright test",
+    "test:featured": "playwright test tests/checkout.spec.js",
+    "test:negative": "playwright test tests/negative-tests.spec.js",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "report": "playwright show-report",
+    "package:submission": "powershell -ExecutionPolicy Bypass -File scripts/package-submission.ps1"
+  },
+  "keywords": [],
+  "author": "BusPlanner QA Candidate",
+  "license": "UNLICENSED",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "dotenv": "^17.4.2"
+  }
+}
